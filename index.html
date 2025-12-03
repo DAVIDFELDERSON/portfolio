@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down mega menu using HTML, CSS & JavaScript</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+
+        <div class="menu-container">
+            <ul class="mega-menu">
+                <li class="dropdown">
+                    <div>
+                        <span>Latest Trends</span>
+                        <span class="material-symbols-rounded">
+                            chevron_right
+                        </span>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#">Latest Trends</a></li>
+                        <li class="sub-dropdown">
+                            <div>
+                                <span>Featured Projects</span>
+                                <span class="material-symbols-rounded">
+                                    chevron_right
+                                </span>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Portfolio Highlight</a></li>
+                                <li><a href="#">UX Case Studies</a></li>
+                                <li><a href="#">Design Launch Calendar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--Service-->
+                <li class="dropdown">
+                    <div>
+                        <span>Services</span>
+                        <span class="material-symbols-rounded">
+                            chevron_right
+                        </span>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#">All Services</a></li>
+                        <li class="sub-dropdown">
+                            <div>
+                                <span>Ui/Ux Design</span>
+                                <span class="material-symbols-rounded">
+                                    chevron_right
+                                </span>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Wireframing</a></li>
+                                <li><a href="#">Prototyping</a></li>
+                                <li><a href="#">Interaction Design</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-dropdown">
+                            <div>
+                                <span>Web Development</span>
+                                <span class="material-symbols-rounded">
+                                    chevron_right
+                                </span>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Front-end Development</a></li>
+                                <li><a href="#">Back-end Development</a></li>
+                                <li><a href="#">Full-stack Solutions</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-dropdown">
+                            <div>
+                                <span>Branding</span>
+                                <span class="material-symbols-rounded">
+                                    chevron_right
+                                </span>
+                            </div>
+                            <ul class="sub-menu">
+                                <li><a href="#">Logo Design</a></li>
+                                <li><a href="#">Visualv Identity</a></li>
+                                <li><a href="#">Brand Logo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="buttons">
+            <button class="btn">Contact</button>
+            <button class="menu-btn">
+                <span class="material-symbols-rounded">
+                    menu
+                </span>
+            </button>
+        </div>
+
+
+
+    </nav>
+
+
+
+
+
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppings', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background: #222;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo:hover {
+    color: #428dff;
+}
+
+.logo:hover {
+    color: #428dff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn {
+    font-size: 1.1rem;
+    background: #428dff;
+    padding: 0.5rem 1.3rem;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #428dff;
+}
+
+.menu-btn {
+    margin-left: 1rem;
+    display: inline-block;
+    background: none;
+}
+
+.menu-btn span {
+    font-size: 2.3rem;
+}
+
+.dropdown > div ,
+.sub-dropdown > div {
+    cursor: pointer;
+}
+
+.dropdown .menu a :hover {
+    color: #9b9b9b;
+}
+
+/* Desktop*/
+
+@media screen and (min-width: 800px) {
+    .navbar {
+        padding: 0rem 1.5rem;
+    }
+
+    .dropdown > div {
+        padding: 1.5rem 1rem;
+    }
+
+    .mega-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .menu {
+        background: #fff;
+        position: absolute;
+        top: 4.65rem;
+        left: 0;
+        width: 100%;
+        padding: 0rem 2rem;
+        overflow-y: scroll;
+        transition: .3s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .menu > li:first-child {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .sub-dropdown > div span:first-child {
+        font-weight: bold;
+    }
+
+    .dropdown > div {
+        border-bottom: 3px solid #fff;
+    }
+
+    .dropdown:hover > div {
+        border-color: #000;
+    }
+
+    .dropdown li {
+        margin-bottom: 1rem;
+    }
+
+    .dropdown > div span:last-child,
+    .sub-dropdown > div {
+        display: none;
+    }
+
+    .menu::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .menu::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .menu::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    .menu {
+        height: 0;
+    }
+
+    .dropdown:hover .menu {
+        height: 50vh;
+        padding: 2rem;
+    } 
+}
+
+/* Mobile*/
+
+@media screen and (max-width: 800px){
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+    .menu-container {
+        background: #fff;
+        position: absolute;
+        top: 4.4rem;
+        left: 0;
+        width: 100%;
+        overflow-y: hidden;
+        transition: .3s ease-in-out;
+    }
+
+    .mega-menu::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .mega-menu::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .mega-menu::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    .mega-menu {
+        padding: 0rem 1rem 1rem 1rem;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    .mega-menu li {
+        font-size: bold;
+        font-size: 1.1rem;
+    }
+
+    .mega-menu li > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .menu li {
+        padding: 0rem 1rem;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .menu a {
+        display: block;
+        margin: 0.8rem 0rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-show {
+        display: block;
+    }
+
+    .material-symbols-rounded {
+        transition: .3s;
+    }
+
+    .icon-rotated {
+        transform: rotate(90deg);
+    }
+
+    .dropdown > div,
+    .sub-dropdown > div {
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .sub-menu {
+        font-size: 0.9rem;
+        display: none;
+    }
+
+    .sub-menu-show {
+        display: block;
+    }
+
+    .dropdown:hover > div,
+    .sub-dropdown:hover > div {
+        background: #dbdbdb;
+    }
+    
+    .menu-container {
+        height: 0;
+    }
+
+    .mega-menu-show {
+        height: 50vh;
+    }
+}
